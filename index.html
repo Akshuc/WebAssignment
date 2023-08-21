@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.semanticui.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Hey</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="flex flex-wrap flex-row justify-between ml-10 w-[95%] mt-5">
+            <div class="flex flex-row gap-[3rem] justify-center items-center">
+                <div id="glitchBox" class="w-[177px] h-[26px]"></div>
+                <div class="flex flex-row gap-[2px]  text-sm text-gray-500 justify-center">
+                    <img class="h-[20px] w-[20px] " src="./assets//icon1.svg" alt="icon1">
+                    <p class="text-sm">My work</p>
+                </div>
+                <div class="flex flex-row gap-[2px] text-sm text-gray-700 justify-center">
+                    <img class="h-[18px] w-[18px]" src="./assets/list.png" alt="icon2">
+                    <p>Process</p>
+                </div>
+            </div>
+            <div class="flex flex-row gap-[3rem] justify-center items-center">
+                <div class="flex justify-center">
+                    <img class="h-[20px] w-[20px]" src="./assets/serch.png" alt="zoom in">
+                </div>
+                <div>
+                    <img class="h-[20px] w-[20px]" src="./assets/add.png" alt="add">
+                </div>
+                <div class="flex flex-row gap-[5px]">
+                    <img class="h-[34px] w-[34px] rounded-[200px]" src="./assets/Ellipse 1.png" alt="connor brown">
+                    <span>Connor Brown</span>
+                    <div class="relative inline-block  text-left">
+                        <div>
+                            <!-- <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-whitesmoke px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true"> -->
+                            <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                        </div>
+
+                        <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y h-[300px] divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                            role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                            <div class="py-1 flex flex-row gap-[2px] mt-2" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <!-- <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
+                              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a> -->
+                                <img src="./assets/Ellipse 1.png" class=" h-[32px] w-[32px] rounded-[1000px] ml-3"
+                                    alt="jack hammer">
+                                <div>
+                                    <p class="text-basis text-gray-900 ml-3">Connor Brown</p>
+                                    <p class="text-xs text-gray-400 ml-3">connor_b@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="py-1 flex flex-column gap-[8px] mb-[8px] mt-4" role="none">
+                                <!-- <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
+                              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a> -->
+                                <div class="flex flex-row gap-[5px] ml-5">
+                                    <img src="./assets/Account.png" alt="Profile"
+                                        class="h-[20px] w-[20px] text-gray-300">
+                                    <span class="text-gray-500 text-basis">Profile</span>
+                                </div>
+                                <div class="flex flex-row gap-[5px] ml-5">
+                                    <img src="./assets/settings.png" alt="Profile"
+                                        class="h-[20px] w-[20px] text-gray-300">
+                                    <span class="text-gray-500 text-basis">Account Settings</span>
+                                </div>
+
+                            </div>
+                            <div class="py-1 flex flex-column gap-[10px]" role="none">
+                                <span class="text-md text-bold text-gray-400 ml-[18px]">Organisation</span>
+                                <!-- <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
+                              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a> -->
+                                <div class="flex flex-row gap-[10px] bg-gray-100 ml-[18px]">
+                                    <img src="./assets/organisation.png" alt="org" class="h-[20px] w-[20px]">
+                                    <p class="text-basis text-purple-400 bold">UX team</p>
+                                </div>
+
+                                <div class="flex flex-row gap-[10px] ml-[18px]">
+                                    <img src="./assets/organisation.png" alt="org" class="h-[20px] w-[20px]">
+                                    <p class="text-basis text-gray-700 bold">Designing Team</p>
+                                </div>
+
+                                <div class="flex flex-row ml-[18px]">
+                                    <span class="text-gray-400 text-sm bold">Show More (2)</span>
+                                    <img src="./assets/down-arrow.png" alt="down" class="h-[18px] w-[18px] ">
+                                </div>
+                            </div>
+                            <div class="py-1 flex ml-[18px] mt-3" role="none">
+                                <!-- <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a> -->
+                                <img src="./assets/logout.png" alt="logout" class="h-[20px] w-[20px]">
+                                <span class="text-gray-600 text-basis bold">Logout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-[40px] mt-[10px] border-1 border-x-gray">
+
+            <div class="flex flex-row justify-start items-center gap-[3rem] py-1 ml-10">
+                <div>
+                    <span class="text-md text-gray-400">Processeses <span class="text-sm text-gray-700">/ New UI/UX
+                            Task</span></span>
+                </div>
+                <div class="flex flex-row gap-[3px] mt-[4px]">
+                    <img src="./assets/list.png" class="h-[16px] w-[16px]" alt="">
+                    <span class="text-sm text-gray-500">List</span>
+                </div>
+                <div class="flex flex-row gap-[3px] mt-[4px]">
+                    <img src="./assets/Grid.png" class="h-[16px] w-[16px]" alt="list">
+                    <span class="text-sm text-gray-500">Board</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table Starts from here -->
+        <div class="mt-5 ml-10">
+
+            <table id="example" class="ui celled table" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Assignee</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Task completed</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td class="flex flex-row gap-8">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.9697 16.4697C19.2626 16.1768 19.7374 16.1768 20.0303 16.4697L22.5303 18.9697C22.8232 19.2626 22.8232 19.7374 22.5303 20.0303L20.0303 22.5303C19.7374 22.8232 19.2626 22.8232 18.9697 22.5303C18.6768 22.2374 18.6768 21.7626 18.9697 21.4697L20.9393 19.5L18.9697 17.5303C18.6768 17.2374 18.6768 16.7626 18.9697 16.4697Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 4C1.25 2.48122 2.48122 1.25 4 1.25C5.51876 1.25 6.75 2.48121 6.75 4C6.75 5.51876 5.51876 6.75 4 6.75C2.48121 6.75 1.25 5.51876 1.25 4ZM4 2.75C3.30964 2.75 2.75 3.30964 2.75 4C2.75 4.69034 3.30965 5.25 4 5.25C4.69034 5.25 5.25 4.69034 5.25 4C5.25 3.30965 4.69034 2.75 4 2.75Z"
+                                    fill="#AFB1B8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.25 4C5.25 3.58579 5.58579 3.25 6 3.25H10C11.5188 3.25 12.75 4.48121 12.75 6V17.5C12.75 18.1903 13.3097 18.75 14 18.75H22C22.4142 18.75 22.75 19.0858 22.75 19.5C22.75 19.9142 22.4142 20.25 22 20.25H14C12.4812 20.25 11.25 19.0188 11.25 17.5V6C11.25 5.30965 10.6903 4.75 10 4.75H6C5.58579 4.75 5.25 4.41421 5.25 4Z"
+                                    fill="#AFB1B8" />
+                            </svg>
+                            Design a relatively simple business system.
+                        </td>
+
+                        <td>
+                            <div class="flex -space-x-1 overflow-hidden">
+                                <img class="h-5 w-40" src="./assets/Frame 89.png" alt="">
+
+                            </div>
+                        </td>
+
+                        <td>
+                            <img src="./assets/Due 3 days ago.png" alt="">
+                        </td>
+
+                        <td class="text-danger">
+                            <img src="./assets/Frame 87.png" alt="...">
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+
+                        <td>
+                            12/06/08
+                        </td>
+
+
+                    </tr>
+
+
+
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.semanticui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</body>
+
+</html>
